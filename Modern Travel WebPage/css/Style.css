@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+@media (max-width:768px){
+    .features_header a{
+        border-radius:.2rem ;
+        margin-top:1rem;
+      
+    }
+ }
+* {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+   
+    
+
+}
+.overflow_hidden{
+    overflow: hidden;
+}
+.font_ubuntu{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.offset::before{
+    content: "";
+    display: block;
+    height: 4rem;
+    margin-top: -4rem;
+}
+/*--- Extra Bootstrap Styling ---*/ 
+[class*="col-"]{
+    padding: 1rem;
+}
+/* Kooshasamadi@gmail.com */
+/*================================ Navigation-Bar ==========================*/
+.navbar{
+    text-transform: uppercase;
+    padding: .7rem 1rem;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .1rem;  
+    
+    transition: background-color .5s ease 0s;
+}
+.navbar img{
+    height: 2rem;
+}
+.custom-toggler-icon img{
+    height: 2rem;
+}
+.navbar-nav li{
+    padding-right: .8rem;
+}
+.navbar-nav .nav-link{
+    color: white;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+.navbar.solid {
+  background: rgba(0, 0, 0, 0.8)!important;
+  transition: background-color 1s ease 0s;
+}
+
+/*=============================== Landing Page ========================*/
+.home-inner{
+   background-image:url('../landing.jpg') ;
+
+}
+.caption{
+    width: 100%;
+    max-width: 100%;
+    top: 33%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+.caption h1{
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-shadow: .1rem .1rem .8rem black;
+    
+}
+.caption h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-shadow: .1rem .1rem .5rem black;
+}
+.btn_landingpage{
+    padding: .8rem 6rem;
+    border-width: .3rem;
+    border-radius: 0.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.btn_landingpage:hover
+{
+    background-image:white;
+    text-shadow:.1rem .1rem .95rem black;
+}
+
+/*============================== Features ==============================*/
+.features_header{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.features_header h1{
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    overflow: hidden;
+}
+.features_header p{
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem 0rem 1rem 0rem;
+}
+.features_header a{
+    border-radius:.1rem ;
+    margin-left: .8rem;
+    margin-right: .8rem;
+    padding: .5rem 1.7rem;
+    background-color: #006600;
+    border-width: .2rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 400;
+}
+.features_header a:hover,
+.features_header a:focus{
+    background-color:#198c19;
+}
+.jumbotron{
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 1rem 0 3rem;
+}
+.jumbotron h3{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.heading-underline {
+    width: 4rem;
+    height: .3rem;
+    background-color:#198c19;
+    margin: 0 auto 2rem;
+  }
+  .heading{
+      font-size: 3rem;
+      letter-spacing: .12rem;
+      margin-top: 4rem;
+  }
+  .feature_content h3{
+      font-weight: 700;
+      font-size: 1.5rem;
+  }
+.feature_content p{
+    font-family: 'Noto Sans', sans-serif;
+}
+/*===== FIXED BACKGROUND IMAGE DARK =====*/
+#fixed {
+    background-image: url("../img/dark.jpg");
+    z-index: -1;
+  }
+  .dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 7rem 2rem;
+
+    z-index: 1000!important;
+  }
+  .dark h3, .dark p {
+    color: #E9ECEF;
+  }
+/*========================= PORTFOLIO ==============================*/
+
+#portfolio{
+    padding-top: 4rem;
+}
+.example-image{
+    width: 100%;
+    height: 65vh;
+    max-height: 70vh;
+}
+.row.no-padding [class*=col-]{
+    padding: 0;
+}
+.p-x-0{
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: .5px;
+}
+.portfolio-item img:hover {
+    transform: scale(1.3);
+    cursor: zoom-in;
+  }
+  .portfolio-item img {
+    transition: transform .5s ease;
+  }
+  .portfolio-item {
+    overflow: hidden;
+  }
+  .lead{
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+  }
+  .btn_lead{
+    font-family: 'Inria Sans', sans-serif;
+    border-radius:.2rem ;
+    border-color:#999999 ;
+    color: white;
+    padding: .5rem 2rem;
+    background-color: #999999;
+    margin-top: 1rem;
+  }
+  .btn-lead:hover{
+      background-color: #454545;
+  }
+/*========================== PRICING ==============================*/
+.narrow{
+    width:80%;
+    margin: 0 auto;
+}
+.pricing-column {
+    background-color: white;
+    padding: 2rem;
+    border-top: .2rem solid #1ebba3;
+    box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.075);
+    transition: transform .7s ease;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  .pricing-column:hover {
+    transform: scale(1.1);
+  }
+  .pricing-column h3 {
+    padding: 1rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+  }
+  .pricing-column p {
+    opacity: .8;
+    margin-top: 1.3rem;
+  }
+  .pricing-column h4 {
+    font-size: 1.1rem;
+    padding: .4rem;
+    
+  }
+  .pricing-column .item {
+    font-weight: 700;
+  }
+  .pricing-column h1 {
+    padding: .8rem 0;
+  }
+  .pricing-column a{
+    padding: .5rem 2rem;
+  }
+  .ribbon{
+      background-color: #6f6f6f;
+      color: white;
+      width: 12rem;
+      height: 2rem;
+      font-size: .8rem;
+      font-weight: 700;
+      padding-top: .35rem;
+      position: absolute;
+      right: -2.8rem;
+  top: 2.3rem;
+  z-index: 2;
+  transform: rotate(45deg);
+  box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.25);
+  }
+/*======================== TEAM SECTION===========================*/
+.team_heading{
+    margin-top: 4rem !important;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+  
+}
+.card{
+  border-radius: .2rem;
+  border: .1rem solid rgba(0, 0, 0, .075);
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.075);
+  margin: 0 1rem;
+  transition: transform  .4s ease-in-out;
+}
+.card-body img{
+    width: 2rem !important;   
+}
+.card-body img:hover{
+  padding-left: .2rem;
+}
+.card-body a{
+  padding: 0rem .2rem;
+  display: inline-block !important;
+}
+.card-img-top{
+  height: 50vh;
+  width: 100%;
+}
+.custom_container{
+  width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  
+}
+.card:hover{
+  transform: scale(.9);
+}
+#fixed-2{
+  background-image: url('../img/light_img.jpg');
+  }
+.light{
+  background-color: rgb(255, 255, 255,0.3);
+  padding-bottom: 100px;
+  
+}
+.card-body h4{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: .1rem solid #1577152a;
+  border-bottom-width: 75%;
+  border-width: 75%;
+  padding-bottom: .7rem;
+}
+.card-body h5{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: .1rem solid #1577152a;
+  border-width: 75%;
+  padding-bottom: .5rem;
+}
+.card-body p{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+/*===================== SKILLS SECTION =========================*/
+.skill{
+  font-family: 'Ubuntu', sans-serif !important;
+  font-weight: 500;
+}
+.skill p{
+  font-family: 'Ubuntu', sans-serif !important;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.skill h3{
+  font-family: 'Ubuntu', sans-serif !important;
+  font-weight: 700;
+  color: #006100 !important;
+}
+.btn_skills{
+letter-spacing: .05rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem 3rem;
+  border-radius:.2rem ;
+  margin-top:1rem;
+  background-color: #327632;
+  color: white;
+}
+.btn_skills:hover{
+  background-color: #196619;
+  color: #E9ECEF;
+}
+.skills_footer_p{
+ font-weight: 500;
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+  
+}
+/*============= CLIENTS SECTION =============*/
+
+.clients img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform .3s ease;
+}
+.clients img:hover {
+  transform: scale(0.95);
+}
+
+.clients-hr {
+  border-top: .05rem solid #1EBBA3;
+}
+
+#clients-slider blockquote img{
+  width: 5%;
+  min-width: 15px;
+}
+blockquote{
+  font-family: 'Inria Sans', sans-serif !important;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+/*============= Footer SECTION =============*/
+footer{
+
+  background-image: url('../img/footerimage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .row{
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
+  padding: 1rem 2rem 3rem;
+}
+footer .row img{
+  padding-right: .4rem;
+}
+footer .row p{
+  font-size: 1.2rem;
+}
+strong{
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: .2rem;
+}
+.form-group {
+  margin-bottom: 1.3rem;
+}
+.form-control {
+  background-color: rgba(26, 26, 26, 0.5);
+  border-radius: 0;
+  border: .15rem solid #666b71;
+  color: white!important;
+  font-size: 1.1rem;
+}
+.form-control:focus {
+  background:  rgba(36, 36, 36, 0.5);
+  border: .15rem solid rgba(26, 26, 26, 0.5);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b2b5b8!important;
+}
+input.btn {
+  cursor: pointer;
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: .2rem;
+}
+hr.socket {
+  border-top: .2rem solid #666b71;
+  width: 100%;
+}
+.own{
+  padding-right: 2rem;
+  color: #76d176;
+  font-weight: 700;
+  text-decoration: none; 
+  font-size: 1.5rem;
+}
+.own:hover{
+  text-decoration: none;
+}
+/*============= TOP SCROLL =============*/
+
+.top-scroll{
+  color: #53595f;
+  background: white;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .5;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: .5;
+}
+
+/*================== Bootstrap Breakpoints
+ // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+========================*/
+
